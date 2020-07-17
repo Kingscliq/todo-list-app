@@ -1,0 +1,156 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #bbb;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-top: 100px;
+    
+    padding: 10px 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+h3 span{
+    color:  rgb(48, 226, 197);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#textInput{
+    height: 40px;
+    width: 350px;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    color: rgb(236, 230, 230)
+    
+    
+}
+#addtaskBtn{
+    background-color: rgb(48, 226, 197);
+    height: 40px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+}
+#addtaskBtn:hover{
+    opacity:0.5
+}
+.fa-plus{
+    color: white;
+    font-size: 1rem;
+    
+}
+.fa-edit{
+    color: grey;
+    
+}
+
+.fa-edit:hover{
+    color: rgb(63, 56, 56);
+}
+.fa-trash{
+    color: rgb(233, 125, 125);
+
+}
+.fa-trash:hover{
+    color: rgb(247, 12, 12);
+
+}
+.fa-check-circle{
+    opacity: 0.5
+}
+.todoList{
+    display: block;
+    
+}
+
+.taskName{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    background-color: aliceblue;
+    border-bottom: 1px solid grey;
+    padding: 5px 10px;
+    height: 40px;
+    
+}
+i{
+    margin-left: 4px;
+}
+.buttons{
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.funcBtn{
+    margin-left: 100px;
+    display: inline-block;
+    
+}
+ul{
+    list-style-type: none
+}
+ul li{
+    background-color: ivory;
+    padding: 10px 5px
+}
+.inputValue{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    
+    
+}
+
+@media only screen and (max-width: 480px) {
+    #textInput{
+        height: 40px;
+        width: 250px;
+        background-color: #333;
+        border: none;
+        padding: 10px;
+        font-size: 1rem;
+        color: rgb(236, 230, 230)
+        
+        
+    }
+    .taskName{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        background-color: aliceblue;
+        border-bottom: 1px solid grey;
+        padding: 5px 10px;
+        height: 40px;
+        
+    }
+    .funcBtn{
+        margin-left: 50px;
+        display: inline-block;
+        
+    }
+    
+  }
